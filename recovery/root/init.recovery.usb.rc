@@ -33,7 +33,7 @@ on init
     mkdir /config/usb_gadget/g1 0770 shell shell
     write /config/usb_gadget/g1/bcdUSB 0x0200
     write /config/usb_gadget/g1/idVendor 0x18d1
-    write /config/usb_gadget/g1/idProduct 0xd001
+    write /config/usb_gadget/g1/idProduct 0x4ee7
     mkdir /config/usb_gadget/g1/strings/0x409 0770 shell shell
     write /config/usb_gadget/g1/strings/0x409/serialnumber ${ro.serialno}
     write /config/usb_gadget/g1/strings/0x409/manufacturer ${ro.product.manufacturer}
@@ -88,8 +88,8 @@ on property:sys.usb.config=adb && property:sys.usb.ffs.ready=1 && property:sys.u
     rm /config/usb_gadget/g1/configs/b.1/f4
     rm /config/usb_gadget/g1/configs/b.1/f5
     write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration "adb"
-    write /config/usb_gadget/g1/idVendor 0x18d1
-    write /config/usb_gadget/g1/idProduct 0x4e11
+    write /config/usb_gadget/g1/idVendor 0x05C6
+    write /config/usb_gadget/g1/idProduct 0x9039
     symlink /config/usb_gadget/g1/functions/ffs.adb /config/usb_gadget/g1/configs/b.1/f1
     write /config/usb_gadget/g1/UDC ${sys.usb.controller}
     setprop sys.usb.state  ${sys.usb.config}
@@ -102,7 +102,7 @@ on property:sys.usb.config=mtp,adb && property:sys.usb.ffs.ready=1 && property:s
     rm /config/usb_gadget/g1/configs/b.1/f4
     rm /config/usb_gadget/g1/configs/b.1/f5
     write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration "mtp_adb"
-    write /config/usb_gadget/g1/idVendor 0x2717
+    write /config/usb_gadget/g1/idVendor 0x05C6
     write /config/usb_gadget/g1/idProduct 0x904d
     symlink /config/usb_gadget/g1/functions/mtp.gs0 /config/usb_gadget/g1/configs/b.1/f1
     symlink /config/usb_gadget/g1/functions/ffs.adb /config/usb_gadget/g1/configs/b.1/f2
@@ -112,7 +112,7 @@ on property:sys.usb.config=mtp,adb && property:sys.usb.ffs.ready=1 && property:s
 #on property:sys.usb.config=adb && property:sys.usb.configfs=0
     #write /sys/class/android_usb/android0/enable 0
     #write /sys/class/android_usb/android0/idVendor 18D1
-    #write /sys/class/android_usb/android0/idProduct 4E11
+    #write /sys/class/android_usb/android0/idProduct 0x4ee7
     #write /sys/class/android_usb/android0/functions adb
     #write /sys/class/android_usb/android0/enable 1
     #setprop sys.usb.state  ${sys.usb.config}
