@@ -47,3 +47,4 @@ odm               /odm        ext4                                       display
 
 # Removable storage
 /usb-otg          vfat        /dev/block/sdg1  /dev/block/sdg            flags=display="USB-OTG";storage;wipeingui;removable;fsflags="utf8"
+/external_sd   vfat     /dev/block/mmcblk0p1  /dev/block/mmcblk0   flags=display="MicroSD";storage;wipeingui;removable
