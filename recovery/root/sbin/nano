@@ -1,0 +1,14 @@
+#!/sbin/sh
+# nano: set up and run nano from recovery/terminal
+# osm0sis @ xda-developers
+
+if [ "$1" == "--term" ]; then
+  term=$2;
+  shift 2;
+else
+  term=pcansi;
+fi;
+
+clear;
+TERMINFO=/etc/terminfo TERM=$term /sbin/nano.bin "$@";
+
