@@ -17,5 +17,3 @@ Rear Macro Sensor  | 2 MP, f/2.4
 Rear Depth Sensor  | 2 MP, f/2.4
 Front Camera | 20 MP, f/2.2, (wide), 1/3.4", 0.8µm
 Release Date | Mar 2021
-
-![Poco_X3_Pro](https://fdn.gsmarena.com/imgroot/news/21/03/xiaomi-poco-x3-pro-f3-ofic/-1200/gsmarena_000.jpg "Poco_X3_Pro")
