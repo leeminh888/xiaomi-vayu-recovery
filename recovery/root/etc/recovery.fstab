@@ -61,3 +61,5 @@ odm                                                     /odm                   e
 /dev/block/bootdevice/by-name/modemst2                  /efs2                  emmc    defaults                                             defaults
 /dev/block/bootdevice/by-name/fsc                       /efsc                  emmc    defaults                                             defaults
 /dev/block/bootdevice/by-name/fsg                       /efsg                  emmc    defaults                                             defaults
+/devices/platform/soc/8804000.sdhci/mmc_host*           /storage/sdcard1       vfat    nosuid,nodev                                         wait,voldmanaged=sdcard1:auto,encryptable=footer
+/devices/platform/soc/1da4000.ufshc_card/host*          /storage/sdcard1       vfat    nosuid,nodev                                         wait,voldmanaged=sdcard1:auto,encryptable=footer
