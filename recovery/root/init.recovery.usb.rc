@@ -119,7 +119,7 @@ on property:sys.usb.config=mtp,adb && property:sys.usb.ffs.ready=1 && property:s
 
 on property:sys.usb.config=mtp,adb && property:sys.usb.configfs=0
     write /sys/class/android_usb/android0/enable 0
-    write /sys/class/android_usb/android0/idVendor 2717
+    write /sys/class/android_usb/android0/idVendor 0x18d1
     write /sys/class/android_usb/android0/idProduct 904D
     write /sys/class/android_usb/android0/functions mtp,adb
     write /sys/class/android_usb/android0/enable 1
