@@ -162,10 +162,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/commonsys-intf/display
 
-PRODUCT_PACKAGES += \
-    qcom_decrypt \
-    qcom_decrypt_fbe
-
 PRODUCT_SHIPPING_API_LEVEL := 30
 
 
